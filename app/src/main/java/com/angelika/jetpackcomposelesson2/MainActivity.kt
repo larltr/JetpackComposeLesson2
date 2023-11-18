@@ -93,7 +93,7 @@ fun BoxContainer(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .padding(top = 16.dp, start = 16.dp),
                     text = stringResource(R.string.text_sunday_19_may_2019_9_30pm),
-                    color = Color(LightGrey.value),
+                    color = LightGrey,
                     fontSize = 16.sp
                 )
                 Button(
@@ -113,7 +113,7 @@ fun BoxContainer(modifier: Modifier = Modifier) {
                         modifier = Modifier
                             .fillMaxWidth(),
                         text = stringResource(R.string.button_text_location),
-                        color = Color(Blue.value),
+                        color = Blue,
                         fontSize = 13.sp
                     )
                 }
@@ -129,7 +129,7 @@ fun BoxContainer(modifier: Modifier = Modifier) {
                         modifier = Modifier.padding(start = 40.dp),
                         painter = painterResource(id = R.drawable.ic_cloudy_and_moon),
                         contentDescription = stringResource(R.string.text_cloudy),
-                        tint = Color(LightGrey2.value)
+                        tint = LightGrey2
                     )
                     Text(
                         modifier = Modifier.padding(start = 34.dp),
@@ -148,20 +148,20 @@ fun BoxContainer(modifier: Modifier = Modifier) {
                 Text(
                     modifier = Modifier.padding(top = 12.dp),
                     text = stringResource(R.string.text_c),
-                    color = Color(Grey.value),
+                    color = Grey,
                     fontSize = 28.sp
                 )
                 Column(modifier = Modifier.padding(start = 50.dp)) {
                     Text(
                         modifier = Modifier.padding(top = 6.dp),
                         text = stringResource(R.string.text_temperature_number_one),
-                        color = Color(Grey.value),
+                        color = Grey,
                         fontSize = 18.sp
                     )
                     Text(
                         modifier = Modifier.padding(top = 14.dp),
                         text = stringResource(R.string.text_temperature_number_two),
-                        color = Color(Grey.value),
+                        color = Grey,
                         fontSize = 18.sp
                     )
                 }
@@ -222,7 +222,6 @@ fun BoxContainer(modifier: Modifier = Modifier) {
                     text2 = stringResource(R.string.text_daytime)
                 )
             }
-
             Row(
                 modifier = Modifier
                     .padding(20.dp)
@@ -263,30 +262,30 @@ fun MyContainer(
     text1: String,
     text2: String
 ) {
-    Column {
+    Column (modifier = modifier){
         Icon(
-            modifier = modifier
+            modifier = Modifier
                 .align(Alignment.CenterHorizontally)
                 .height(25.dp)
                 .width(25.dp),
             painter = painter,
             contentDescription = contentDescription,
-            tint = Color(LightGrey2.value)
+            tint = LightGrey2
         )
         Text(
-            modifier = modifier
+            modifier = Modifier
                 .padding(top = 10.dp)
                 .align(Alignment.CenterHorizontally),
             text = text1,
             fontSize = 16.sp,
-            color = Color(DarkGrey.value)
+            color = DarkGrey
         )
         Text(
-            modifier = modifier
+            modifier = Modifier
                 .align(Alignment.CenterHorizontally),
             text = text2,
             fontSize = 10.sp,
-            color = Color(LightGrey.value)
+            color = LightGrey
         )
     }
 }
@@ -312,13 +311,13 @@ fun MyCardContainer(
                 .padding(top = 10.dp, start = 32.dp),
             painter = painter,
             contentDescription = contentDescription,
-            tint = Color(LightGrey2.value)
+            tint = LightGrey2
         )
         Text(
             modifier = modifier
                 .padding(top = 10.dp, start = 18.dp),
             text = text1,
-            color = Color(DarkGrey.value),
+            color = DarkGrey,
             fontSize = 16.sp
         )
         Text(
@@ -326,7 +325,7 @@ fun MyCardContainer(
                 .padding(start = 18.dp),
             text = text2,
             fontSize = 10.sp,
-            color = Color(LightGrey.value)
+            color = LightGrey
         )
     }
 }
