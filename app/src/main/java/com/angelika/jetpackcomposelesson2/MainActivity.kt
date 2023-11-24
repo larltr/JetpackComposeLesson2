@@ -307,21 +307,21 @@ fun MyCardContainer(
         colors = CardDefaults.cardColors(Color.White)
     ) {
         Icon(
-            modifier = modifier
+            modifier = Modifier
                 .padding(top = 10.dp, start = 32.dp),
             painter = painter,
             contentDescription = contentDescription,
             tint = LightGrey2
         )
         Text(
-            modifier = modifier
+            modifier = Modifier
                 .padding(top = 10.dp, start = 18.dp),
             text = text1,
             color = DarkGrey,
             fontSize = 16.sp
         )
         Text(
-            modifier = modifier
+            modifier = Modifier
                 .padding(start = 18.dp),
             text = text2,
             fontSize = 10.sp,
